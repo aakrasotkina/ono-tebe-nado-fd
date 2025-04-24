@@ -181,10 +181,14 @@
 
 .card {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     width: 334px;
-    height: 596px;
+    height: 663px;
+    flex-wrap: wrap;
+    text-align: start;
+    z-index: 1;
     
     
     
@@ -239,7 +243,7 @@
 
 .card__text {
     justify-content: space-between;
-    
+    position: absolute; bottom: 0;
     font-family: "Raleway", sans-serif;
     color: #fff;
     font-size: 20px;
@@ -320,13 +324,15 @@
 
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr min-content;
-    justify-items: center;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr min-content;
+    justify-content: space-around;
     margin: 180px;
     padding: 0px;
     min-height: 180px;
     font-size: 18px;
     letter-spacing: 0;
+    gap: 48px;
 }
 
 
@@ -369,7 +375,11 @@
 
 .footer__social-list {
     display: flex;
-    gap: 48px;
+    justify-content: space-between;
+    justify-items: center;
+   
+    gap: 20px;
+    padding-left: 30px;
 }
 
 .footer__social-list-item {
