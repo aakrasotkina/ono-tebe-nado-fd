@@ -3,12 +3,12 @@
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     justify-content: space-between;
-    padding: 92px 50px 96px 50px
+    padding: 95px 50px 100px 50px
     
 }
 
 .header__menu {
-    display: flex;
+    display: inline-flex;
     justify-self: center;
     left: 50px;
     top: 133px;
@@ -20,6 +20,9 @@
     width: 148px;
     height: 105px;
     top: 92px;
+    bottom: 96px;
+    left: 478px;
+
     
 }
 
@@ -27,7 +30,8 @@
     display: inline-flex;
     gap: 32px;
     list-style-type: circle;
-    padding-right: 7px;
+    padding-right: 35px;
+    /* menu */
 
 }
 
@@ -53,8 +57,10 @@
 .header__address {
     width: 240px;
     height: 98px;
-    right: 50px;
     top: 95px;
+    right: 50px;
+    left: 810px;
+    border: 1px;
     justify-self: end;
     font-size: 18px;
     line-height: 24.3px;
@@ -62,14 +68,16 @@
     letter-spacing: 0.18px;
     list-style-type: none;
     font-style: normal;
-    text-underline-offset: 4px;  
-    /* contacts */
+    text-underline-offset: 4px;
+     /* contacts */
 
 }
  
 .cover {
     display: block;
     position: relative;
+    width: 1100px;
+    height: 757px;
     background-image: url(/images/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,19 +135,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 40px 40px 40px;
+    padding: 50px 50px 50px 50px;
     gap: 79px;
 }
 
 .cover__description-text {
-    text-align: center;
-    justify-self: center;
+    justify-content: center;
     font-family: "Raleway", sans-serif;
     color: white;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
     word-spacing: 18px;
+    text-transform: uppercase;
+    
 }
 
 .bet-button {
@@ -154,11 +163,11 @@
     line-height: 51px;
     text-align: center;
     text-transform: uppercase;
+    
 }
 
 .lots__heading {
-    padding-top: 100px;
-    padding-bottom: 27px;
+    padding-top: 180px;
     padding-left: 64px;
     font-family: "Raleway", sans-serif;
     color:#000;
@@ -173,8 +182,10 @@
     flex-wrap: column;
     gap: 25px;
     justify-content: center;
-    padding: 0;
-    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
     
     
 }
@@ -184,10 +195,10 @@
     position: relative;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
     width: 334px;
     height: 663px;
     flex-wrap: wrap;
-    text-align: start;
     z-index: 1;
     
     
@@ -237,20 +248,26 @@
     line-height: 120%;
     text-decoration-line: underline;
     text-transform: uppercase;
-    padding: 51px 40px 48px;
+    padding-top: 48px; 
+    padding-left: 40px;
+    padding-right: 40px;
     
 }
 
 .card__text {
-    justify-content: space-between;
-    position: absolute; bottom: 0;
+    position: absolute;
+    bottom: 0;
+    flex-wrap: wrap;
+    vertical-align: bottom;
     font-family: "Raleway", sans-serif;
     color: #fff;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    padding: 51px 40px 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .lots__look-more-link {
@@ -270,7 +287,7 @@
     flex-direction: column;
     gap: 25px;
     grid-template-columns: 334px 1fr;
-    padding: 120px 24px 120px 24px;
+    padding: 120px 24px 180px 24px;
     
 }
 
@@ -325,19 +342,19 @@
 .footer {
     display: grid;
     flex-direction: column;
-    grid-template-columns: 1fr 1fr 1fr min-content;
-    justify-content: space-around;
-    margin: 180px;
-    padding: 0px;
-    min-height: 180px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding-top: 180px;
     font-size: 18px;
     letter-spacing: 0;
-    gap: 48px;
+    gap: 35px;
 }
 
 
 .footer__menu {
-    padding-left: 35px;
+    padding-left: 50px;
+    padding-right: 154px;
+    padding-bottom: 82px;
 }
 
 .footer__menu-list {
@@ -375,17 +392,16 @@
 
 .footer__social-list {
     display: flex;
-    justify-content: space-between;
     justify-items: center;
-   
-    gap: 20px;
-    padding-left: 30px;
+    gap: 25px;
+    padding-left: 177.5px;
+    
 }
 
-.footer__social-list-item {
-    width: 48px;
-    height: 48px;
-
+.footer__social-icon {
+    max-width: 48px;
+    max-height: 48px;
+    
 }
 
 
