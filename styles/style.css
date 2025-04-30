@@ -3,21 +3,19 @@
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     justify-content: space-between;
-    padding: 95px 50px 90px 50px
+    padding: 92px 50px 96px 50px;
     
 }
 
 .header__menu {
-    display: inline-flex;
-    justify-content: space-between;
-    gap: 13px;
-    
+    display: flex;
+    justify-self: center;
     
 }
 
 
 .header__links-list {
-    display: inline-flex;
+    display: flex;
     gap: 33px;
     list-style-type: circle;
     padding-right: 35px;
@@ -30,7 +28,7 @@
 .header__links-list-item {
     font-size: 18px;
     font-weight: 400;
-    
+    text-underline-offset: 4px;
 
 }
 
@@ -104,31 +102,37 @@
 .cover__title {
     display: flex;
     flex-direction: column;
-    padding-top: 97px;
-    padding-left: 25px;
-    padding-right: 35px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 53px;
-    letter-spacing: 0.3em;
+    padding: 135px 50px 55px 50px;  
+    gap: 20px;   
+    text-align: center;
+    font-size: 100px;  
+    font-weight: 700;  
+    line-height: 100%;  
+    letter-spacing: 30px;
     text-transform: uppercase;
     color: #fff;
+
 }
 
 .aligned-text {
-    text-align: left;
+    align-self: flex-start;  
+    line-height: 115%;  
+    transform: translateY(2px); 
+    text-align: center;    
+    word-spacing: 5px; 
     /* ОНО */
      
 }
 
 .aligned-text_center {
-    text-align: center;
+    align-self: center;
+    text-align: center;  
     /* ТЕБЕ */
  
 }
 
 .aligned-text_right {
+    align-self: right;
     text-align: right;
     /* НАДО */
  
@@ -349,23 +353,14 @@
 .footer {
     display: grid;
     flex-direction: column;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    margin-top: 150px;
-    padding-top: 150px;
-    margin-left: 33px;
-    padding-left: 33px;
-    margin-right: 25px;
-    padding-right: 25px;
-    margin-bottom: 78px;
-    padding-bottom: 78px;
+    grid-template-columns: 240px 1fr 240px;
+    margin: 210px 50px 115px;
     font-size: 18px;
     
 }
 
 
 .footer__menu {
-    display: inline-flex;
     justify-content: center;
     
 }
