@@ -60,13 +60,23 @@
 
 .header__address {
     display: inline-block;
-    justify-self: start;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 23.8px;
     letter-spacing: 0.09px;
+    list-style-type: none;
+    color: #000000;
+    padding-left: 93.5px;
+    padding-bottom: 1.5px; 
+}
+
+.header__address-text {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
     list-style-type: none;
     color: #000000;
     padding-left: 93.5px;
